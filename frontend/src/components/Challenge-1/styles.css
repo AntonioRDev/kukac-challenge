@@ -1,0 +1,46 @@
+.c1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.c1-label {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.c1-sub-label {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.c1-button {
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(113, 89, 193);
+  background-color: rgb(255, 255, 255);
+  padding: 0px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.c1-input {
+  height: 18px;
+  border-radius: 10px;
+  border: solid 1px #e3e3e3;
+  padding: 11px;
+}
+
+.c1-inputs-wrapper :nth-child(1n) {
+  margin-right: 10px;
+}
