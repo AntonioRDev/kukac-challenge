@@ -1,0 +1,48 @@
+.cp-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.number {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-image: initial;
+}
+
+.card {
+  height: 150px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(118, 100, 182);
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 64px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 8px;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+
+.cp-container > div:hover {
+  transform: translateY(-15px);
+  transition: all 0.2s;
+}
