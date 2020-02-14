@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./styles.css";
 
-export default class Challenge1 extends Component {
+class Challenge1 extends Component {
   render() {
     return (
       <div className="c1-container">
@@ -18,3 +18,5 @@ export default class Challenge1 extends Component {
     );
   }
 }
+
+export default Challenge1;
