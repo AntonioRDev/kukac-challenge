@@ -44,3 +44,12 @@
 .c1-inputs-wrapper :nth-child(1n) {
   margin-right: 10px;
 }
+
+.c1-palindromes {
+  padding: 25px;
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.8;
+  font-weight: bold;
+  color: white;
+}
