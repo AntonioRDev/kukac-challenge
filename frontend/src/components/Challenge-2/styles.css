@@ -3,6 +3,10 @@
   flex-direction: column;
   align-items: center;
   margin-top: 5em;
+
+  font-size: 16px;
+  font-family: sans-serif;
+  color: white;
 }
 
 .c2-label {
@@ -35,4 +39,46 @@
 
 .c2-container :nth-child(3n) {
   margin-top: 10px;
+}
+
+/* Change Response */
+.c2-cr-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.c2-cr-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.c2-cr-header :nth-child(3) {
+  margin-top: 0 !important;
+}
+
+.c2-cr-value {
+  font-weight: bold;
+}
+
+.c2-cr-body {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.c2-cr-body div {
+  margin-right: 1rem;
+}
+
+.c2-cr-body :nth-child(3) {
+  margin-top: 0 !important;
+}
+
+.c2-cr-note-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.c2-cr-note-container label {
+  text-align: center;
 }
