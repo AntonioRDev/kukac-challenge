@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getCeps } from "../../services/challenge3-service";
+import { getCeps } from "../../services/challenge4-service";
 import "./styles.css";
 import BackArrow from "../../images/back.svg";
 import _ from "lodash";

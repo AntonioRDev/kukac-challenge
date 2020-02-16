@@ -1,0 +1,39 @@
+.c3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.c3-checkbox-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.c3-checkbox-container > label {
+  margin-right: 1.2rem;
+  font-family: sans-serif;
+  line-height: 1.8;
+  color: white;
+}
+
+.c3-button {
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(113, 89, 193);
+  background-color: rgb(255, 255, 255);
+  padding: 0px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.c3-input {
+  height: 18px;
+  border-radius: 10px;
+  border: solid 1px #e3e3e3;
+  padding: 11px;
+  margin-bottom: 1rem;
+}
