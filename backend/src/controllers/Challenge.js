@@ -1,3 +1,5 @@
+const axios = require("axios");
+
 class ChallengeController {
   index(req, res) {
     res.status(200).json({
@@ -33,7 +35,25 @@ class ChallengeController {
 
   saveVehicle(req, res) {}
 
-  getCEPs(req, res) {}
+  async getCEPs(req, res) {
+    const cep1 = req.params.cep1;
+    const cep2 = req.params.cep2;
+    const cep3 = req.params.cep3;
+    const cep4 = req.params.cep4;
+    const cep5 = req.params.cep5;
+
+    const search = [cep1, cep2, cep3, cep4, cep5];
+    const ceps = [];
+
+    for (let i = 0; i < 5; i++) {
+      await axios
+        .get(`https://viacep.com.br/ws/${search[i]}/json/`)
+        .then(response => ceps.push(response.data))
+        .catch(err => ceps.push({ erro: true }));
+    }
+
+    return res.status(200).json(ceps);
+  }
 }
 
 function checkPalindrome(number) {

@@ -16,7 +16,10 @@ routes.get(
   "/challenges/getChange/:buyValue/:deliveredValue",
   challengeController.getChange
 );
-routes.get("/challenges/getCEPs", challengeController.getCEPs);
+routes.get(
+  "/challenges/getCEPs/:cep1/:cep2/:cep3/:cep4/:cep5",
+  challengeController.getCEPs
+);
 
 routes.post("/challenges", challengeController.saveVehicle);
 
