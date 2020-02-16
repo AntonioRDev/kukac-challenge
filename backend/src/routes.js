@@ -21,6 +21,6 @@ routes.get(
   challengeController.getCEPs
 );
 
-routes.post("/challenges", challengeController.saveVehicle);
+routes.post("/challenges/saveVehicle", challengeController.saveVehicle);
 
 module.exports = routes;

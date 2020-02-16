@@ -1,4 +1,5 @@
 const axios = require("axios");
+const fs = require("fs");
 
 class ChallengeController {
   index(req, res) {
@@ -33,8 +34,6 @@ class ChallengeController {
     return res.status(200).json(banknotes);
   }
 
-  saveVehicle(req, res) {}
-
   async getCEPs(req, res) {
     const cep1 = req.params.cep1;
     const cep2 = req.params.cep2;
@@ -53,6 +52,23 @@ class ChallengeController {
     }
 
     return res.status(200).json(ceps);
+  }
+
+  saveVehicle(req, res) {
+    const vehicle = req.body;
+
+    if (vehicle) {
+      const json = JSON.stringify(vehicle);
+
+      fs.writeFile("vehicle.json", json, "utf-8", err => {
+        if (!err) {
+          return res.status(200);
+        } else {
+          return res.status(500);
+        }
+      });
+    }
+    return res.status(500);
   }
 }
 
