@@ -1,3 +1,7 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .c4-container {
   display: flex;
   flex-direction: column;
@@ -40,4 +44,28 @@
   border: solid 1px #e3e3e3;
   padding: 11px;
   margin-bottom: 1em;
+}
+
+/* Result Page */
+.c4-cep-result-container {
+  display: flex;
+}
+
+.c4-cep-result {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  margin-top: 2rem;
+
+  font-size: 16px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.c4-cep-result label {
+  margin-bottom: 6px;
+}
+
+.c4-cep-result :nth-child(1) {
+  text-align: center;
 }
